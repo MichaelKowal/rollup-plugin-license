@@ -54,8 +54,6 @@ jobs:
 
             - run: npm run build
 
-            - run: cp LICENSE package.json README.md build
-
             - name: Release 🚀
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
